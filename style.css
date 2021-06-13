@@ -1,0 +1,42 @@
+/* 画面のスタイルシート */
+body{
+    font-family:"Noto sans JP","sans-serlf";
+    margin:0px;
+    min-width:1076px;
+  }
+
+  /* [header]のスタイルシート */
+
+  header{
+    background-image: linear-gradient(#2fb4c5,#1dd1d1);
+  }
+  .block-header{
+      list-style: none;
+      padding: 10px 10px 10px 0;
+      margin: 0;
+      
+  }
+  .block-header li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 13px;
+}
+.box-header{
+    color: #fff;
+}
+.box-header img{
+    margin: 100px 0 100px 100px;
+}
+.box-header h2{
+    display: inline;
+    letter-spacing: 4px;
+    font-weight:bolder;
+    margin: 0 0 0 50px;
+    
+}
+.box-header h3{
+    display: inline;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
