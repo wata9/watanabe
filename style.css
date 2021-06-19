@@ -8,13 +8,12 @@ body{
   /* [header]のスタイルシート */
 
   header{
-    background-image: linear-gradient(#2fb4c5,#1dd1d1);
+    background-image: linear-gradient(#2fb4c5,#00fff2);
   }
   .block-header{
       list-style: none;
       padding: 10px 10px 10px 0;
       margin: 0;
-      
   }
   .block-header li a{
     color: #fff;
@@ -22,21 +21,270 @@ body{
     margin: 5px;
     font-size: 13px;
 }
+.block-header li  .box1::after{
+    content:  " ";
+    font-size: 0.1px;
+    padding: 1px 15px;
+    background-color: #00fff2;
+    transform: scale(1,1);
+    display: inline-block; 
+    position: absolute;
+    top:33px;
+    left:8px;
+}
+.block-header li .box2::after{
+    content:  " ";
+    font-size: 0.1px;
+    padding: 1px 15px;
+    background-color: #00fff2;
+    transform: scale(1,1);
+    display: inline-block; 
+    position: absolute;
+    top:33px;
+    left:61px;
+}
+.block-header li .box3::after{
+    content:  " ";
+    font-size: 0.1px;
+    padding: 1px 20px;
+    background-color: #00fff2;
+    transform: scale(1,1);
+    display: inline-block; 
+    position: absolute;
+    top:33px;
+    left:115px;
+}
 .box-header{
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+.box-profile{
+    border: solid 1px #fff;
+    padding: 20px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 100px 0 100px 350px;
 }
 .box-header img{
-    margin: 100px 0 100px 100px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 50%;
 }
-.box-header h2{
-    display: inline;
-    letter-spacing: 4px;
+.box-header .box1{
+    display: block;
+    letter-spacing: 6px;
+    font-size: 40px;
     font-weight:bolder;
     margin: 0 0 0 50px;
-    
+    text-align: center;
 }
-.box-header h3{
-    display: inline;
-    letter-spacing: 3px;
+.box-header .box1{
+    padding: 0px 80px;
+    margin-left: 18px;
+}
+.box-header .box1::after{
+    content:  " ";
+    padding: 1px 0px;
+    background-color: #00fff2;
+    transform: scale(1,1);
+    display: block;
+    text-align: center;
+}
+.box-header .box2{
+    display: block;
+    letter-spacing: 10px;
+    font-size: 30px;
     font-weight: normal;
+    text-align: center;
+    margin: 30px 0 0 50px;
 }
+.box-header .box3{
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    font-size: 35px;
+    margin-left: 45px;
+    letter-spacing: 5px;
+}
+
+/* aboutのスタイルシート */
+.block-main{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.637);
+    display: block;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.block-main h2{
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 100px;
+}
+.block-main img{
+    height: 100px;
+}
+.block-main p{
+    font-size: 20px;
+    padding: 0 200px;
+}
+.box1-main p{
+    font-size: 20px;
+    padding: 0 200px;
+    text-align: left;
+}
+.box1-main span{
+    font-size: 20px;
+}
+.box2-main{
+    text-align: center;
+}
+.box2-main li {
+    display: inline-block;
+    list-style: none;  
+    margin-right: 5px;
+    margin-top:20px;
+}
+.box2-main img{
+    height: 40px;
+}
+.box2-main ul{
+    padding-inline-start: 0px;
+}
+
+/* projectsのスタイルシート */
+
+h1{
+    color: #000;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top:300px
+}
+.box1-projects {
+    text-align: center;
+    margin: 20px 0 70px 0;
+}
+.box1-projects img{
+    height: 50px;
+}
+.box2-projects .box1{
+    display: inline-block;
+}
+.box2-projects{
+    text-align: center;
+}
+.box2-projects .box2{
+    text-align: center;
+    display: inline-block;
+}
+.box2-projects img{
+    height: 250px;
+    float: left;
+    margin-right: 350px;
+    border: 1px solid #000;
+}
+.box2-projects div:last-child img{
+    margin-right: 0;
+}
+
+/* sampleのスタイルシート */
+
+/* サンプル１（左） */
+.box2-projects .box1{
+    text-align: left;
+}
+.box2-projects h2 {
+    letter-spacing: 3px;
+}
+.box2-projects .box1 .box1{
+    font-size: 14px;
+}
+.box2-projects .box1 .box2{
+    display: block;
+    text-align: left;
+    margin:6px 0 12px 0;
+}
+.box2-projects .box1 .box3{
+    font-size: 14px;
+}
+.box2-projects .box1 .box4{
+    font-size: 14px;
+}
+.box2-projects .box1 .site{
+    margin-top:10px;
+}
+.box2-projects .box1 .site .box1{
+    border: solid 1px #000 ;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 3px 10px 0 10px;
+    margin-right: 10px;
+}
+.box2-projects .box1 .site .box1 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 8px;
+}
+.box2-projects .box1 .site .box2{
+    border: solid 1px #000 ;
+    display: inline-block;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 0 10px; 
+}
+.box2-projects .box1 .site .box2 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 8px;
+}
+/* サンプル２（右） */
+.box2-projects .box2{
+    text-align: left;
+}
+.box2-projects h2{
+    letter-spacing: 3px;
+}
+.box2-projects .box2 .box1{
+    font-size: 14px;
+}
+.box2-projects .box2 .box2{
+    display: block;
+    text-align: left;
+    margin:6px 0 12px 0;
+}
+.box2-projects .box2 .box3{
+    font-size: 14px;
+}
+.box2-projects .box2 .box4{
+    font-size: 14px;
+}
+.box2-projects .box2 .site{
+    margin-top:10px;
+}
+.box2-projects .box2 .site .box1{
+    border: solid 1px #000 ;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 3px 10px 0 10px;
+    margin-right: 10px;
+}
+.box2-projects .box2 .site .box1 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 8px;
+}
+.box2-projects .box2 .site .box2{
+    border: solid 1px #000 ;
+    display: inline-block;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 0 10px; 
+}
+.box2-projects .box2 .site .box2 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+
+
