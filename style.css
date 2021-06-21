@@ -8,7 +8,7 @@ body{
   /* [header]のスタイルシート */
 
   header{
-    background-image: linear-gradient(#2fb4c5,#00fff2);
+    background-image: linear-gradient(#5FC1C3,#61C1C4);
   }
   .block-header{
       list-style: none;
@@ -120,13 +120,34 @@ body{
     font-weight: normal;
     font-size: 40px;
     margin-top: 100px;
+    letter-spacing: 5px;
 }
+.block-main .main1{
+    position: relative;
+}
+.block-main .main1::after{
+    border-bottom: 8px dashed #707070;
+    content:"";
+    position: absolute;
+    bottom: 35px;
+    width: 144px;
+    transform: translateX(30%); 
+}
+ .block-main h2::before{
+    border-bottom: 8px dashed #707070;
+    content:"";
+    position: absolute;
+    bottom: -306px;
+    width: 144px;
+    transform: translateX(-93%);
+} 
 .block-main img{
-    height: 100px;
+    height: 50px;
 }
 .block-main p{
     font-size: 20px;
     padding: 0 200px;
+    position:relative
 }
 .box1-main p{
     font-size: 20px;
@@ -142,9 +163,13 @@ body{
 .box2-main li {
     display: inline-block;
     list-style: none;  
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top:20px;
 }
+.box2-main ul .box2:last-child {
+    margin-right: 0;;
+}
+
 .box2-main img{
     height: 40px;
 }
@@ -155,10 +180,29 @@ body{
 /* projectsのスタイルシート */
 
 h1{
-    color: #000;
+    color: #fff;
     letter-spacing: 5px;
     text-align: center;
-    margin-top:300px
+    font-size: 40px;
+}
+.projects h1{
+    position:relative;
+}
+.projects h1::after{
+    border-bottom: 8px dashed #fff;
+    content:"";
+    position:absolute;
+    bottom: -54px;
+    width: 144px;
+    transform: translateX(-25%);
+}
+.projects h1::before{
+    border-bottom: 8px dashed #fff;
+    content:"";
+    position:absolute;
+    bottom: -54px;
+    width: 144px;
+    transform: translateX(-75%);
 }
 .box1-projects {
     text-align: center;
@@ -166,6 +210,7 @@ h1{
 }
 .box1-projects img{
     height: 50px;
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 .box2-projects .box1{
     display: inline-block;
@@ -195,45 +240,50 @@ h1{
 }
 .box2-projects h2 {
     letter-spacing: 3px;
+    color: #fff;
 }
 .box2-projects .box1 .box1{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box1 .box2{
     display: block;
     text-align: left;
     margin:6px 0 12px 0;
+    color: #fff;
 }
 .box2-projects .box1 .box3{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box1 .box4{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box1 .site{
     margin-top:10px;
 }
 .box2-projects .box1 .site .box1{
-    border: solid 1px #000 ;
+    border: solid 1px #fff ;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     padding: 3px 10px 0 10px;
     margin-right: 10px;
 }
 .box2-projects .box1 .site .box1 a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 8px;
 }
 .box2-projects .box1 .site .box2{
-    border: solid 1px #000 ;
+    border: solid 1px #fff ;
     display: inline-block;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     padding: 0 10px; 
 }
 .box2-projects .box1 .site .box2 a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 8px;
 }
@@ -243,48 +293,198 @@ h1{
 }
 .box2-projects h2{
     letter-spacing: 3px;
+    color: #fff;
 }
 .box2-projects .box2 .box1{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box2 .box2{
     display: block;
     text-align: left;
     margin:6px 0 12px 0;
+    color: #fff;
 }
 .box2-projects .box2 .box3{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box2 .box4{
     font-size: 14px;
+    color: #fff;
 }
 .box2-projects .box2 .site{
     margin-top:10px;
 }
 .box2-projects .box2 .site .box1{
-    border: solid 1px #000 ;
+    border: solid 1px #fff;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     padding: 3px 10px 0 10px;
     margin-right: 10px;
 }
 .box2-projects .box2 .site .box1 a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 8px;
 }
 .box2-projects .box2 .site .box2{
-    border: solid 1px #000 ;
+    border: solid 1px #fff ;
     display: inline-block;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     padding: 0 10px; 
 }
 .box2-projects .box2 .site .box2 a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 8px;
+}
+/* projectsの背景（緑） */
+.projects{
+    background-color: #53BD9D;
+    /* padding: 150px 0 150px 0; */
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+/* contactのスタイルシート */
+
+/* box1 */
+.box1-contact{
+    color: rgba(0, 0, 0, 0.637);
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 7px;
+    margin-bottom: 80px;
+}
+.box1-contact h2{
+    font-weight:700;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    position:relative;
+}
+.box1-contact h2::after{
+    border-bottom: 8px dashed #707070;
+    content:"";
+    position:absolute;
+    bottom: -54px;
+    width: 144px;
+    transform: translateX(-25%);
+}
+.box1-contact h2::before{
+    border-bottom: 8px dashed #707070;
+    content:"";
+    position:absolute;
+    bottom: -54px;
+    width: 144px;
+    transform: translateX(-75%);
+}
+.box1-contact img{
+    height: 50px;
+    text-align: center;
+}
+
+/* .box2 */
+.box2-contact{
+    color: #4D4C4C;
+    text-align: center;
+}
+
+/* 電話のスタイルシート */
+.box2-contact .box1{
+    background-color: #DEDADA;
+    border-top: 5px solid #53BD9D;
+    width: 500px;
+    height: 300px;
+}
+.box2-contact .box1 img{
+    height: 50px;
+    padding-top: 35px;
+}
+.box2-contact .box1 h2{
+    font-weight: lighter;
+    margin-top: 25px;
+}
+.box2-contact .box1 p{
+    padding: 10px 30px;
+    border-bottom: 5px solid #8f8e8e;
+    margin:0;
+}
+.box2-contact .box1 a{
+    text-decoration: none;
+    color: #4D4C4C;   
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* メールのスタイルシート */
+.box2-contact{
+    display: flex;
+    justify-content: space-around;
+}
+.box2-contact .box2{
+    background-color: #DEDADA;
+    border-top: 5px solid #53BD9D;
+    width: 500px;
+    height: 300px;
+}
+.box2-contact .box2 img{
+    height: 50px;
+    padding-top: 35px;
+}
+.box2-contact .box2 h2{
+    font-weight: lighter;
+}
+.box2-contact .box2 p{
+    padding: 10px 30px;
+    border-bottom: 5px solid #8f8e8e;
+    margin:0;
+}
+.box2-contact .box2 a{
+    text-decoration: none;
+    color: #4D4C4C;
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
 }
 
 
 
+
+
+.slanted {
+    padding: 220px 0;
+    position: relative;
+    background: #53BD9D;
+    margin: 0 auto 120px;
+  }
+  
+  .slanted:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .slanted:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .type4:before {
+    border-width: 0 0 100px 100vw;
+    border-color: transparent transparent transparent #fff;
+  }
+  .type4:after {
+    border-width: 100px 0 0 100vw;
+    border-color: transparent transparent transparent #fff;
+  }
