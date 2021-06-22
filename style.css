@@ -163,7 +163,7 @@ body{
 .box2-main li {
     display: inline-block;
     list-style: none;  
-    margin-right: 20px;
+    margin-right: 35px;
     margin-top:20px;
 }
 .box2-main ul .box2:last-child {
@@ -171,7 +171,7 @@ body{
 }
 
 .box2-main img{
-    height: 40px;
+    height: 55px;
 }
 .box2-main ul{
     padding-inline-start: 0px;
@@ -341,12 +341,40 @@ h1{
     font-size: 8px;
 }
 /* projectsの背景（緑） */
-.projects{
-    background-color: #53BD9D;
-    /* padding: 150px 0 150px 0; */
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-}
+.slanted {
+    padding: 220px 0;
+    position: relative;
+    background: #53BD9D;
+    margin: 0 auto 120px;
+  }
+  
+  .slanted:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .slanted:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .block-projects:before {
+    border-width: 0 0 100px 100vw;
+    border-color: transparent transparent transparent #fff;
+  }
+  .block-projects:after {
+    border-width: 100px 0 0 100vw;
+    border-color: transparent transparent transparent #fff;
+  }
 
 /* contactのスタイルシート */
 
@@ -389,6 +417,7 @@ h1{
 .box2-contact{
     color: #4D4C4C;
     text-align: center;
+    margin-bottom:400px;
 }
 
 /* 電話のスタイルシート */
@@ -405,12 +434,19 @@ h1{
 .box2-contact .box1 h2{
     font-weight: lighter;
     margin-top: 25px;
+    position:relative;
 }
-.box2-contact .box1 p{
-    padding: 10px 30px;
-    border-bottom: 5px solid #8f8e8e;
-    margin:0;
+.box2-contact .box1 h2::after{
+    content:  " ";
+    font-size: 0.1px;
+    padding: 2px 50px;
+    background-color: #707070;
+    display: inline-block; 
+    position: absolute;
+    top:55px;
+    left:200px;
 }
+
 .box2-contact .box1 a{
     text-decoration: none;
     color: #4D4C4C;   
@@ -436,11 +472,17 @@ h1{
 }
 .box2-contact .box2 h2{
     font-weight: lighter;
+    position:relative;
 }
-.box2-contact .box2 p{
-    padding: 10px 30px;
-    border-bottom: 5px solid #8f8e8e;
-    margin:0;
+.box2-contact .box2 h2::after{
+    content:  " ";
+    font-size: 0.1px;
+    padding: 2px 50px;
+    background-color: #707070;
+    display: inline-block; 
+    position: absolute;
+    top:55px;
+    left:200px;
 }
 .box2-contact .box2 a{
     text-decoration: none;
@@ -450,41 +492,11 @@ h1{
     font-size: 20px;
 }
 
+/* footerのスタイルシート */
 
-
-
-
-.slanted {
-    padding: 220px 0;
-    position: relative;
-    background: #53BD9D;
-    margin: 0 auto 120px;
-  }
-  
-  .slanted:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  .slanted:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  .type4:before {
-    border-width: 0 0 100px 100vw;
-    border-color: transparent transparent transparent #fff;
-  }
-  .type4:after {
-    border-width: 100px 0 0 100vw;
-    border-color: transparent transparent transparent #fff;
-  }
+footer{
+    padding:50px 0;
+    text-align: center;
+    background-color: #F5F4F4;
+    color: #938F8F;
+}
