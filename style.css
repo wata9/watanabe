@@ -1,3 +1,6 @@
+/* @media screen and (min-width: 768px){ */
+
+
 /* 画面のスタイルシート */
 body{
     font-family:"Noto sans JP","sans-serlf";
@@ -137,7 +140,7 @@ body{
     border-bottom: 8px dashed #707070;
     content:"";
     position: absolute;
-    bottom: -306px;
+    bottom: -248px;
     width: 144px;
     transform: translateX(-93%);
 } 
@@ -500,3 +503,82 @@ footer{
     background-color: #F5F4F4;
     color: #938F8F;
 }
+
+/* スマホ用のスタイルシート */
+
+@media screen and (max-width: 767px){
+    body{
+      min-width: 100%; 
+    }
+
+    /* [header]のスタイルシート */
+
+    .block-header{
+        list-style: none;
+        padding: 10px 10px 10px 0;
+        margin: 0;
+    }
+    .block-header li a{
+      color: #fff;
+      text-decoration: none;
+      margin: 5px;
+      font-size: 20px;
+    }
+    .block-header li  .box1::after{
+        content:  " ";
+        font-size: 0.1px;
+        padding: 1px 24px;
+        background-color: #00fff2;
+        transform: scale(1,1);
+        display: inline-block; 
+        position: absolute;
+        top:40px;
+        left:8px;
+    }
+    .block-header li .box2::after{
+        content:  " ";
+        font-size: 0.1px;
+        padding: 1px 24px;
+        background-color: #00fff2;
+        transform: scale(1,1);
+        display: inline-block; 
+        position: absolute;
+        top:40px;
+        left:81px;
+    }.block-header li .box3::after{
+        content:  " ";
+        font-size: 0.1px;
+        padding: 1px 35px;
+        background-color: #00fff2;
+        transform: scale(1,1);
+        display: inline-block; 
+        position: absolute;
+        top:40px;
+        left:155px;
+    }
+    .box-profile {
+        margin:0;
+    }
+    .box-profile img{
+        height:200px;
+    }
+    .box-profile{
+        padding:15px;
+        height:200px;
+    }
+
+    /* rui css */
+    .box-header {
+        display: block;
+    }
+    .block-main .main1::after {
+        width: auto;
+    }
+    .box2-contact .box2 h2::after {
+        left: 0;
+    }
+    .box2-projects img {
+        margin-right: 0;
+    }
+}
+
